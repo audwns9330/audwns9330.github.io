@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src = "http://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#btn1").click(function(){
+          $("#im1").animate({ marginLeft : "+=300px" }, "slow");
+          $("#im1").animate({ marginLeft : "-=300px" }, "slow");
+        });
+        $("#btn2").click(function(){
+          $("img").animate({ height : "toggle" }, "slow");
+        });
+      });
+    </script>
+    <style>
+      button {
+        width : 100px;
+        height : 30px;
+        border : 1px solid red;
+      }
+      img {
+        border : 2px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <img src = "1.jpg" id = "im1" width = "400" height = "265"><br>
+    <b> 실습입니다. </b> 시일스읍 <br>
+    <button id = "btn1"> 좌우 이동 </button>
+    <button id = "btn2"> 이미지 토글 </button>
+  </body>
+</html>
