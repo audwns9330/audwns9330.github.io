@@ -4,8 +4,78 @@
     <meta charset="utf-8">
     <script src = "https://code.jquery.com/jquery-3.4.1.js"></script>
     <title></title>
+    <style>
+      .img { position : relative; }
+      .img2 { position : absolute; }
+      #kotg { 
+	top : 125px; 
+	left : 638px; 
+      }
+      #koimg { 
+	border : solid 5px skyblue;
+	position : absolute;
+	display : none;
+	top : 100px; 
+	left : 670px; 
+      }
+      #usatg { 
+	top : 130px; 
+	left : 180px; 
+      }
+      #usaimg { 
+	border : solid 5px skyblue;
+	position : absolute;
+	display : none;
+	top : 100px; 
+	left : 220px; 
+      }
+      #engtg { 
+	top : 77px; 
+	left : 366px; 
+      }
+      #engimg { 
+	border : solid 5px skyblue;
+	position : absolute;
+	display : none;
+	top : 130px; 
+	left : 220px; 
+      }
+    </style>
+    <script>
+      $(document).ready(function(){
+        $("#kotg").hover(function(){
+          $("#koimg").slideToggle(1000);
+        });
+        $("#usatg").hover(function(){
+          $("#usaimg").slideToggle(1000);
+        });
+        $("#engtg").hover(function(){
+          $("#engimg").slideToggle(1000);
+        });
+      });
+    </script>
   </head>
   <body>
-    <img src = "world.png" id = "world" width = "800" height = "400">
+    <div class = "img">
+    <img src = "world.png" width = "800" height = "400">
+    </div>
+    <div class = "img2" id = "kotg">
+    <img src = "target.png" width = "35" height = "50">
+    </div>
+    <div class = "img2" id = "engtg">
+    <img src = "target.png" width = "35" height = "50">
+    </div>
+    <div class = "img2" id = "usatg">
+    <img src = "target.png" width = "35" height = "50">
+    </div>
+    <div class = "img2" id = "usaimg">
+    <img src = "usa.jpg" width = "200" height = "140">
+    </div>
+    <div class = "img2" id = "koimg">
+    <img src = "korea.jpg" width = "200" height = "140">
+    </div>
+    <div class = "img2" id = "engimg">
+    <img src = "eng.jpg" width = "200" height = "140">
+    </div>
   </body>
 </html>
