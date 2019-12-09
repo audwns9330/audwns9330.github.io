@@ -70,3 +70,6 @@ footer{
   float : left;
   background : #e3e3e3;
 }
+#iframe {
+    border: solid 3px skyblue;
+}
