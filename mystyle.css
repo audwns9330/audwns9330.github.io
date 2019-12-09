@@ -43,7 +43,7 @@ aside#left{
 #left h3{
   margin-left : 40px;
   margin-bottom: 0;
-  background : #e3e3e3;
+  background : #00A2C9;
 }
 #left ul li{
   background : #3f3f3f;
@@ -55,7 +55,7 @@ aside#left{
   display : block;
 }
 #left ul li a:hover{
-  background: #cf8;
+  background: #00D8FF;
 }
 #main{
   color : #444;
